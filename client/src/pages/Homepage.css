@@ -26,37 +26,6 @@ body {
   position: relative; /* Pour positionner les éléments enfants */
 }
 
-.section2 {
-  width: 80%; /* Ajustez la largeur selon vos besoins */
-  max-width: 600px; /* Limite la largeur maximale */
-  margin: 20px auto; /* Centre les sections horizontalement */
-  padding: 20px;
-  background-color: #FBC926; /* Couleur de fond des sections */
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  position: relative; /* Pour positionner les éléments enfants */
-}
-
-.section3 {
-  width: 80%; /* Ajustez la largeur selon vos besoins */
-  max-width: 600px; /* Limite la largeur maximale */
-  margin: 20px auto; /* Centre les sections horizontalement */
-  padding: 20px;
-  background-color: #D9D9D9; /* Couleur de fond de la section 3 */
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  position: relative; /* Pour positionner les éléments enfants */
-}
-.logo {
-  position: absolute;
-  top: 10px; /* Ajustez cette valeur pour positionner le logo verticalement */
-  right: 5px; 
-  width: 200px; /* Ajustez la taille du logo selon vos besoins */
-  height: auto;
-  margin-right: 100px; /* Ajoutez de l'espace entre le logo et le titre */
-}
-
-
 .character-image {
 
   margin: 10px 10px; /* Ajoutez un peu d'espace entre les images */
@@ -71,10 +40,22 @@ body {
   align-items: center;
 }
 
-.center-button {
+.section2 {
+  width: 80%; /* Ajustez la largeur selon vos besoins */
+  max-width: 600px; /* Limite la largeur maximale */
+  margin: auto; /* Centre les sections horizontalement */
+  padding: 20px;
+  background-color: #FBC926; /* Couleur de fond des sections */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative; /* Pour positionner les éléments enfants */
+}
+
+
+.center-button{
   display: block;
-  margin: 20px auto;
-  padding: 10px 20px;
+  margin: auto;
+  padding: 5px 20px;
   border-radius: 8px;
   font-size: 16px;
   cursor: pointer;
@@ -110,7 +91,18 @@ body {
   text-decoration: none;
 }
 
-  
+.section3 {
+  height: 95px;
+  width: 80%; /* Ajustez la largeur selon vos besoins */
+  max-width: 600px; /* Limite la largeur maximale */
+  margin: 20px auto; /* Centre les sections horizontalement */
+  padding: 15px;
+  background-color: #FBC926; /* Couleur de fond de la section 3 */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative; /* Pour positionner les éléments enfants */
+}
+
   
   .train-container {
     position: relative;
@@ -118,7 +110,7 @@ body {
   }
   
   .train-image {
-    width: 20%;
+    width: 70%;
     border-radius: 15px;
   }
   
@@ -131,6 +123,12 @@ body {
     font-size: 24px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
+
+  .center-button2 {
+    background-color: #FBC926;
+    cursor: pointer;
+  }
+
   
   .random-text-container {
     position: relative;
@@ -162,3 +160,14 @@ body {
   .random-text:nth-child(6) { --random-top: 0.2; --random-left: 0.6; }
   .random-text:nth-child(7) { --random-top: 0.4; --random-left: 0.4; }
   .random-text:nth-child(8) { --random-top: 0.6; --random-left: 0.1; }
+
+  @media screen and (max-width: 992px) {
+    .train-title {
+      font-size: 10px;
+    }
+    .train-image{
+      min-height: 100px;
+      width: 300px;
+    }
+    
+  }
