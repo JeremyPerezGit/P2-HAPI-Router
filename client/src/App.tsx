@@ -1,10 +1,11 @@
-import ChooseHouseHome from "./pages/ChooseHouseHome";
+import { Outlet } from "react-router-dom";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <ChooseHouseHome />
-    </div>
+    <>
+      <Outlet />
+    </>
   );
 }
 
