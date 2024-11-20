@@ -1,11 +1,9 @@
-import ChooseHouseHome from "./ChooseHouseHome";
-import "./ChooseHouseHome.css";
+import ChooseHouseHome from "./pages/ChooseHouseHome";
 
 function App() {
   return (
     <div className="App">
       <ChooseHouseHome />
-      {}
     </div>
   );
 }
