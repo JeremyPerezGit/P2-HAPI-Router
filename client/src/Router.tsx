@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "./App";
+import Header from "./components/Header";
 import CharactersPage from "./pages/CharactersPage";
 import ChooseHouseHome from "./pages/ChooseHouseHome";
 import Homepage from "./pages/Homepage";
@@ -15,19 +16,39 @@ export const mainRouter = createBrowserRouter([
       },
       {
         path: "/home",
-        element: <Homepage />,
+        element: (
+          <>
+            <Header />
+            <Homepage />
+          </>
+        ),
       },
       {
         path: "/characters",
-        element: <CharactersPage />,
+        element: (
+          <>
+            <Header />
+            <CharactersPage />
+          </>
+        ),
       },
       {
         path: "/spells",
-        element: <SpellsPage />,
+        element: (
+          <>
+            <Header />
+            <SpellsPage />
+          </>
+        ),
       },
       {
         path: "*",
-        element: <h1>Error 404</h1>,
+        element: (
+          <>
+            <Header />
+            <h1>Error 404</h1>
+          </>
+        ),
       },
     ],
   },
