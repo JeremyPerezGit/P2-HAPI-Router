@@ -3,6 +3,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { RouterProvider } from "react-router-dom";
 import { mainRouter } from "./Router";
+import ThemeProvider from "./context/theme";
 
 // Find the root element in the HTML document
 const rootElement = document.getElementById("root");
@@ -13,6 +14,8 @@ if (rootElement == null) {
 // Render the app inside the root element
 createRoot(rootElement).render(
   <StrictMode>
-    <RouterProvider router={mainRouter} />
+    <ThemeProvider>
+      <RouterProvider router={mainRouter} />
+    </ThemeProvider>
   </StrictMode>,
 );
