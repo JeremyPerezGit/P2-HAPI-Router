@@ -41,7 +41,7 @@ function Homepage() {
         </section>
         <section className="section section2" id="section2">
           <h2>What would magic be without spells?</h2>
-          <p> Venez découvrir les sorts de l’univers Harry Potter !</p>
+          <p>Come and discover the spells of the Harry Potter universe!</p>
           <div
             className={`random-text-container ${visible ? "visible" : "hidden"}`}
           >
@@ -57,14 +57,7 @@ function Homepage() {
         </section>
         <section className="section section3" id="section3">
           <h2>Useless information therefore essential:</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-            ratione adipisci ab, amet quas eligendi odio, nostrum autem hic
-            nihil molestias iste maxime, voluptas et mollitia tempora impedit
-            placeat veritatis sint. Suscipit architecto, necessitatibus aliquid
-            soluta, doloribus fugiat neque error libero voluptates ducimus
-            veritatis perferendis. Molestias quod odio ex eaque?
-          </p>
+          <p>lorem</p>
         </section>
         <section className="section section4" id="section4">
           <div className="train-container">
