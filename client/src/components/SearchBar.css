@@ -1,0 +1,9 @@
+.searchBar {
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+.searchBar input {
+  font-size: 1.2rem;
+  border-radius: 8px;
+}

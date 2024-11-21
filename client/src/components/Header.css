@@ -1,0 +1,68 @@
+@font-face {
+  font-family: HP;
+  src: url(../assets/fonts/HarryPotter.ttf);
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px auto;
+  width: 90%;
+}
+
+#title {
+  font-family: HP, sans-serif;
+  color: #eeba30;
+  margin: 50px auto;
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 400;
+  width: 45%;
+}
+
+li {
+  list-style: none;
+  font-size: 1.2rem;
+  color: #eeba30;
+}
+.wandPointer {
+  visibility: hidden;
+  font-size: 1.5rem;
+}
+
+li:hover {
+  .wandPointer {
+    visibility: visible;
+  }
+}
+
+#navSpells,
+#navCharacters,
+#navHome {
+  text-decoration: none;
+  color: #eeba30;
+}
+
+.houseEmblem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+}
+
+#houseEmblem {
+  width: 200px;
+}
+
+.header-title {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 992px) {
+  .houseEmblem {
+    display: none;
+  }
+}
