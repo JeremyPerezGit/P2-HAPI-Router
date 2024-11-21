@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import trainImage from "../images/train.png"; // Ajustez le chemin vers votre image
 import "./Homepage.css";
+import { NavLink } from "react-router-dom";
 
 function Homepage() {
   const texts = [
@@ -28,20 +29,34 @@ function Homepage() {
     <div className="homepage">
       <div className="content">
         <section className="section section1" id="section1">
-          <h2> HARRY POTTER UNIVERSE</h2>
+          <h2 className="titlesHP"> HARRY POTTER UNIVERSE</h2>
           <p>Learn more about your favorite characters</p>
-          <img
-            src={"https://ik.imagekit.io/hpapi/harry.jpg"}
-            alt="Main Character"
-            className="character-image"
-          />
+          <section className="trioImg">
+            <img
+              src={"https://ik.imagekit.io/hpapi/ron.jpg"}
+              alt="Ron Weasley"
+              className="character-image"
+              id="ronImg"
+            />
+            <img
+              src={"https://ik.imagekit.io/hpapi/harry.jpg"}
+              alt="Harry Potter"
+              className="character-image"
+            />
+            <img
+              src={"https://ik.imagekit.io/hpapi/hermione.jpeg"}
+              alt="Hermione Granger"
+              className="character-image"
+              id="hermioneImg"
+            />
+          </section>
           <button type="button" className="center-button">
-            Personnages
+            <NavLink to="/characters">Personnages</NavLink>
           </button>
         </section>
         <section className="section section2" id="section2">
-          <h2>What would magic be without spells?</h2>
-          <p> Venez découvrir les sorts de l’univers Harry Potter !</p>
+          <h2 className="titlesHP">What would magic be without spells?</h2>
+          <p> Come to discorver the saga's spells !</p>
           <div
             className={`random-text-container ${visible ? "visible" : "hidden"}`}
           >
@@ -51,19 +66,20 @@ function Homepage() {
               </span>
             ))}
           </div>
-          <button type="button" className="center-button">
-            Sorts
-          </button>
+          <NavLink to="/spells">
+            <button type="button" className="center-button">
+              Sorts
+            </button>
+          </NavLink>
         </section>
         <section className="section section3" id="section3">
-          <h2>Useless information therefore essential:</h2>
+          <h2 className="titlesHP">
+            Useless informations therefore essential :
+          </h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-            ratione adipisci ab, amet quas eligendi odio, nostrum autem hic
-            nihil molestias iste maxime, voluptas et mollitia tempora impedit
-            placeat veritatis sint. Suscipit architecto, necessitatibus aliquid
-            soluta, doloribus fugiat neque error libero voluptates ducimus
-            veritatis perferendis. Molestias quod odio ex eaque?
+            Before opting for the Magic Sorting Hat, J.K Rowling envisioned
+            statues of the castle's founders coming to life to choose their
+            students.
           </p>
         </section>
         <section className="section section4" id="section4">
