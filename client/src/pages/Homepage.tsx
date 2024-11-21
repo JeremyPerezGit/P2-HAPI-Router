@@ -1,8 +1,15 @@
-import React, { useEffect, useState } from "react";
-import trainImage from '../images/train.png';
+import React, { useState, useEffect } from "react";
+import trainImage from '../images/train.png'; // Ajustez le chemin vers votre image
 import "./Homepage.css"
 
+
 function Homepage() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   const texts = [
     "Expelliarmus!",
     "Wingardium Leviosa!",
@@ -28,21 +35,26 @@ function Homepage() {
     <div className="homepage">
       <header className="header">
         <nav className="navbar">
+          <div className={`burger-menu ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
+            <div className="burger-bar"></div>
+            <div className="burger-bar"></div>
+            <div className="burger-bar"></div>
+          </div>
+          <div className={`menu ${menuOpen ? 'open' : ''}`}>
+            <a href="#section1">Home</a>
+            <a href="#section2">Characteres</a>
+            <a href="#section4">Spells</a>
+          </div>
         </nav>
       </header>
       <div className="content">
-        <section className="section">
-          <h2 className="section1H2"> HARRY POTTER UNIVERSE</h2>
-          <p className="titleS2">Learn more about your favorite characters</p>
-          <div>
-            <img src={"https://ik.imagekit.io/hpapi/ron.jpg"} alt="Character" className="character-image" />
-            <img src={"https://ik.imagekit.io/hpapi/harry.jpg"} alt="Character" className="character-image" />
-            <img src={"https://ik.imagekit.io/hpapi/hermione.jpeg"} alt="Character" className="character-image" />
-            <p className="titleS1">Learn more about your favorite characters</p>
-          </div>
+        <section className="section section1" id="section1">
+          <h2> HARRY POTTER UNIVERSE</h2>
+          <p>Learn more about your favorite characters</p>
+          <img src={"https://ik.imagekit.io/hpapi/harry.jpg"} alt="Main Character" className="character-image" />
           <button className="center-button">Personnages</button>
         </section>
-        <section className="section2">
+        <section className="section section2" id="section2">
           <h2>What would magic be without spells?</h2>
           <p> Venez découvrir les sorts de l’univers Harry Potter !</p>
           <div className={`random-text-container ${visible ? 'visible' : 'hidden'}`}>
@@ -52,11 +64,11 @@ function Homepage() {
           </div>
           <button className="center-button">Sorts</button>
         </section>
-        <section className="section3">
-          <h2>Fun Facts</h2>
-          <button className="center-button">Le saviez-vous ?</button>
+        <section className="section section3" id="section3">
+          <h2>Useless information therefore essential:</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ratione adipisci ab, amet quas eligendi odio, nostrum autem hic nihil molestias iste maxime, voluptas et mollitia tempora impedit placeat veritatis sint. Suscipit architecto, necessitatibus aliquid soluta, doloribus fugiat neque error libero voluptates ducimus veritatis perferendis. Molestias quod odio ex eaque?</p>
         </section>
-        <section className="section4">
+        <section className="section section4" id="section4">
           <div className="train-container">
             <img src={trainImage} alt="Train" className="train-image" />
             <div className="text-overlay">
@@ -69,5 +81,5 @@ function Homepage() {
     </div>
   );
 }
-export default Homepage;
 
+export default Homepage;
