@@ -26,7 +26,7 @@ function ChooseHouseHome() {
           house="Gryffindor"
           imageSrc="src/assets/images/Gryffindor.png"
           description="Bravery and Chivalry"
-          onClick={() => handleChange("Gryffindor")}
+          onClick={() => handleChange("gryffindor")}
         />
 
         {/* Hufflepuff Card */}
@@ -34,7 +34,7 @@ function ChooseHouseHome() {
           house="Hufflepuff"
           imageSrc="src/assets/images/Hufflepuff.png"
           description="Loyalty and hard working"
-          onClick={() => handleChange("Hufflepuff")}
+          onClick={() => handleChange("hufflepuff")}
         />
 
         {/* Ravenclaw Card */}
@@ -42,7 +42,7 @@ function ChooseHouseHome() {
           house="Ravenclaw"
           imageSrc="src/assets/images/Ravenclaw.png"
           description="Wit and learning"
-          onClick={() => handleChange("Ravenclaw")}
+          onClick={() => handleChange("ravenclaw")}
         />
 
         {/* Slytherin Card */}
@@ -50,7 +50,7 @@ function ChooseHouseHome() {
           house="Slytherin"
           imageSrc="src/assets/images/Slytherin.png"
           description="Cunning and ambition"
-          onClick={() => handleChange("Slytherin")}
+          onClick={() => handleChange("slytherin")}
         />
       </div>
     </div>
