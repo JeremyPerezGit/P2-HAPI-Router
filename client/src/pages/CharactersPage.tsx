@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./CharactersPage.css";
-import missingCharacterImage from "../assets/images/missing_character.jpg";
+import CharactersCards from "../components/CharactersCards";
+import Search from "../components/SearchBar";
 
 interface CharacterProps {
   id: string;
@@ -14,8 +15,10 @@ interface CharacterProps {
     length?: number;
   };
 }
+
 export default function CharactersPage() {
-  const [characters, setCharacters] = useState<CharacterProps[] | null>(null);
+  const [characters, setCharacters] = useState<CharacterProps[] | null>([]);
+  const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
     fetch("https://hp-api.herokuapp.com/api/characters")
@@ -28,32 +31,24 @@ export default function CharactersPage() {
     return <div className="loadingAPI">Loading...</div>;
   }
 
-  return (
-    <section className="charactersCards">
-      {characters.map((character) => (
-        <div key={character.id} className={`characterCard ${character.house}`}>
-          <picture className="characterPicture">
-            <img
-              src={character?.image || missingCharacterImage}
-              alt={character.name}
-              id="characterImage"
-            />
-          </picture>
+  const filteredCharacters = characters.filter((character) =>
+    character.name.toLowerCase().includes(searchTerm.toLowerCase()),
+  );
 
-          <section className="characterBody">
-            <div className="cardName">
-              <h3>{character.name}</h3>
-            </div>
-            <div className="characterCardBody">
-              <h3>Wand :</h3>
-              <p>Wood : {character.wand.wood || "???"}</p>
-              <p>Core : {character.wand.core || "???"}</p>
-              <p>Length : {character.wand.length || "???"} inches</p>
-              <h3>Patronus : {character.patronus || "???"}</h3>
-            </div>
-          </section>
-        </div>
-      ))}
-    </section>
+  const handleSearch = (term: string) => {
+    setSearchTerm(term);
+  };
+
+  return (
+    <>
+      <Search onSearch={handleSearch} />
+      <h2 className="charactersTitle">Characters</h2>
+
+      <section className="charactersCards">
+        {filteredCharacters.map((character) => (
+          <CharactersCards key={character.id} character={character} />
+        ))}
+      </section>
+    </>
   );
 }
