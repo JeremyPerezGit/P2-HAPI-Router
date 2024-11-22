@@ -1,10 +1,12 @@
 import { NavLink } from "react-router-dom";
 import "./Header.css";
 import hogwartsEmblem from "../assets/images/Hogwarts.png";
+import { useTheme } from "../context/theme";
 
 export default function Header() {
+  const { theme } = useTheme();
   return (
-    <header className="header">
+    <header className={`header ${theme}`}>
       <section className="header-title">
         <h1 id="title">Hapi Router</h1>
         <figure className="houseEmblem">
