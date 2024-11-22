@@ -6,7 +6,7 @@
 ul {
   display: flex;
   justify-content: space-around;
-  margin: 20px auto;
+  margin: 20px auto 0 auto;
   width: 90%;
 }
 
@@ -65,4 +65,20 @@ li:hover {
   .houseEmblem {
     display: none;
   }
+}
+
+.gryffindor {
+  background-color: #740001;
+}
+
+.hufflepuff {
+  background-color: #ecb939;
+}
+
+.ravenclaw {
+  background-color: #222f5b;
+}
+
+.slytherin {
+  background-color: #1a472a;
 }

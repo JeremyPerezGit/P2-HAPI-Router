@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./SpellsPage.css";
 import Search from "../components/SearchBar";
 import SpellsCards from "../components/SpellsCards";
+import { useTheme } from "../context/theme";
 
 interface SpellsProps {
   id: string;
@@ -14,6 +15,7 @@ interface SpellsProps {
 }
 
 export default function SpellsPage() {
+  const { theme } = useTheme();
   const [spells, setSpells] = useState<SpellsProps[] | null>([]);
   const [searchTerm, setSearchTerm] = useState("");
 
@@ -36,7 +38,7 @@ export default function SpellsPage() {
   };
 
   return (
-    <>
+    <div className={theme}>
       <Search onSearch={handleSearch} />
       <h2 className="spellsTitle">Spells</h2>
 
@@ -45,6 +47,6 @@ export default function SpellsPage() {
           <SpellsCards key={spell.id} spell={spell} />
         ))}
       </section>
-    </>
+    </div>
   );
 }

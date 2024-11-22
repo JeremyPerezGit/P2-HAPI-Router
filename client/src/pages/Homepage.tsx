@@ -3,9 +3,9 @@ import trainImage from "../images/train.png"; // Ajustez le chemin vers votre im
 import "./Homepage.css";
 import { useTheme } from "../context/theme";
 
-function Homepage() { 
-  const {theme} = useTheme()
-    const texts = [
+function Homepage() {
+  const { theme } = useTheme();
+  const texts = [
     "Expelliarmus!",
     "Wingardium Leviosa!",
     "Avada Kedavra!",
