@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import trainImage from "../images/train.png"; // Ajustez le chemin vers votre image
 import "./Homepage.css";
+import { useTheme } from "../context/theme";
 
-function Homepage() {
-  const texts = [
+function Homepage() { 
+  const {theme} = useTheme()
+    const texts = [
     "Expelliarmus!",
     "Wingardium Leviosa!",
     "Avada Kedavra!",
@@ -25,7 +27,7 @@ function Homepage() {
   }, []);
 
   return (
-    <div className="homepage">
+    <div className={`homepage ${theme}`}>
       <div className="content">
         <section className="section section1" id="section1">
           <h2> HARRY POTTER UNIVERSE</h2>

@@ -32,7 +32,6 @@
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative; /* Pour positionner les éléments enfants */
-  z-index: -1;
 }
 
 .character-image {
@@ -212,4 +211,20 @@
   .menu a {
     padding: 10px 20px;
   }
+}
+
+.gryffindor {
+  background-color: #740001;
+}
+
+.hufflepuff {
+  background-color: #ecb939;
+}
+
+.ravenclaw {
+  background-color: #222f5b;
+}
+
+.slytherin {
+  background-color: #1a472a;
 }
