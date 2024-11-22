@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import trainImage from "../images/train.png"; // Ajustez le chemin vers votre image
 import "./Homepage.css";
-import { useTheme } from "../context/theme";
 import { NavLink } from "react-router-dom";
+import { useTheme } from "../context/theme";
 
 function Homepage() {
   const { theme } = useTheme();
