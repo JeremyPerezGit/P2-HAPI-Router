@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import trainImage from "../images/train.png"; // Ajustez le chemin vers votre image
 import "./Homepage.css";
 import { NavLink } from "react-router-dom";
 
@@ -84,9 +83,10 @@ function Homepage() {
         </section>
         <section className="section section4" id="section4">
           <div className="train-container">
-            <img src={trainImage} alt="Train" className="train-image" />
             <div className="text-overlay">
-              <h2 className="train-title">You want to test your knowledge?</h2>
+              <h2 className="train-title">
+                Do you want to test your knowledge?
+              </h2>
               <button type="button" className="center-button2">
                 Start the quiz
               </button>
