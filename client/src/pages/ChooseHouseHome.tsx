@@ -4,7 +4,7 @@ import Card from "../components/Card";
 import { useTheme } from "../context/theme";
 
 function ChooseHouseHome() {
-  const [changeColor, setChangeColor] = useState("Gryffindor");
+  const [changeColor, setChangeColor] = useState("");
 
   const { setTheme } = useTheme();
 

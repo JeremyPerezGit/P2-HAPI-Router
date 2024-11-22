@@ -1,5 +1,21 @@
 .homepage {
   text-align: center;
+}
+
+@keyframes pageLoadEffect {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.homepage {
+  animation: pageLoadEffect 2s ease-out;
+
+  text-align: center;
   color: black;
 }
 
@@ -22,6 +38,7 @@
   background-color: #fbc926;
   border-radius: 25px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative; /* Pour positionner les éléments enfants */
 }
 
 .character-image {
@@ -185,4 +202,20 @@
     padding: 0;
     justify-content: space-around;
   }
+}
+
+.gryffindor {
+  background-color: #740001;
+}
+
+.hufflepuff {
+  background-color: #ecb939;
+}
+
+.ravenclaw {
+  background-color: #222f5b;
+}
+
+.slytherin {
+  background-color: #1a472a;
 }

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./CharactersPage.css";
 import CharactersCards from "../components/CharactersCards";
 import Search from "../components/SearchBar";
+import { useTheme } from "../context/theme";
 
 interface CharacterProps {
   id: string;
@@ -17,6 +18,7 @@ interface CharacterProps {
 }
 
 export default function CharactersPage() {
+  const { theme } = useTheme();
   const [characters, setCharacters] = useState<CharacterProps[] | null>([]);
   const [searchTerm, setSearchTerm] = useState("");
 
@@ -40,7 +42,7 @@ export default function CharactersPage() {
   };
 
   return (
-    <>
+    <div className={theme}>
       <Search onSearch={handleSearch} />
       <h2 className="charactersTitle">Characters</h2>
 
@@ -49,6 +51,6 @@ export default function CharactersPage() {
           <CharactersCards key={character.id} character={character} />
         ))}
       </section>
-    </>
+    </div>
   );
 }
