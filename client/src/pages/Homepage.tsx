@@ -52,7 +52,9 @@ function Homepage() {
             />
           </section>
           <button type="button" className="center-button">
-            <NavLink to="/characters">Personnages</NavLink>
+            <NavLink to="/characters" className="navlinks">
+              Personnages
+            </NavLink>
           </button>
         </section>
         <section className="section section2" id="section2">
@@ -67,11 +69,11 @@ function Homepage() {
               </span>
             ))}
           </div>
-          <NavLink to="/spells">
-            <button type="button" className="center-button">
+          <button type="button" className="center-button">
+            <NavLink to="/spells" className="navlinks">
               Sorts
-            </button>
-          </NavLink>
+            </NavLink>
+          </button>
         </section>
         <section className="section section3" id="section3">
           <h2 className="titlesHP">

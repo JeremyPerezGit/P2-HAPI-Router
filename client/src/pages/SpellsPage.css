@@ -53,18 +53,10 @@
   padding: 1rem 0;
 }
 
-.gryffindor {
-  background-color: #740001;
-}
-
-.hufflepuff {
-  background-color: #ecb939;
-}
-
-.ravenclaw {
-  background-color: #222f5b;
-}
-
-.slytherin {
-  background-color: #1a472a;
+h3 {
+  color: black;
+  text-align: center;
+  font-family: HP, sans-serif;
+  font-size: 2.5em;
+  font-weight: 400;
 }

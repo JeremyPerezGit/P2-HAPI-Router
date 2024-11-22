@@ -45,7 +45,7 @@
 }
 
 .characterBody {
-  padding: 10%;
+  padding: 8%;
   font-size: 1rem;
 }
 
@@ -72,18 +72,11 @@
   background-size: cover;
 }
 
-.gryffindor {
-  background-color: #740001;
+h4 {
+  font-size: 1.2rem;
 }
 
-.hufflepuff {
-  background-color: #ecb939;
-}
-
-.ravenclaw {
-  background-color: #222f5b;
-}
-
-.slytherin {
-  background-color: #1a472a;
+.patronus {
+  display: flex;
+  align-items: center;
 }

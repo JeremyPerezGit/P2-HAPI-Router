@@ -44,7 +44,7 @@ export default function CharactersPage() {
   return (
     <div className={theme}>
       <Search onSearch={handleSearch} />
-      <h2 className="charactersTitle">Characters</h2>
+      <h3 className="charactersTitle">Characters</h3>
 
       <section className="charactersCards">
         {filteredCharacters.map((character) => (

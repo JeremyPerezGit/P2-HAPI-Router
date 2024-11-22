@@ -206,16 +206,44 @@
 
 .gryffindor {
   background-color: #740001;
+  #navHome,
+  #navCharacters,
+  #navSpells,
+  #title {
+    color: #eeba30;
+  }
 }
 
 .hufflepuff {
   background-color: #ecb939;
+  #navHome,
+  #navCharacters,
+  #navSpells,
+  #title {
+    color: #372e29;
+  }
 }
 
 .ravenclaw {
   background-color: #222f5b;
+  #navHome,
+  #navCharacters,
+  #navSpells,
+  #title {
+    color: #bebebe;
+  }
 }
 
 .slytherin {
   background-color: #1a472a;
+  #navHome,
+  #navCharacters,
+  #navSpells,
+  #title {
+    color: #aaaaaa;
+  }
+}
+
+.navlinks {
+  text-decoration: none;
 }
