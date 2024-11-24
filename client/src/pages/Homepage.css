@@ -61,6 +61,10 @@
   align-items: center;
 }
 
+.section1 {
+  margin-top: 100px;
+}
+
 .section2 {
   width: 80%;
   max-width: 600px;
@@ -246,4 +250,8 @@
 
 .navlinks {
   text-decoration: none;
+}
+
+.navlinks:visited {
+  color: inherit;
 }

@@ -22,7 +22,7 @@ ul {
 
 li {
   list-style: none;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: #eeba30;
 }
 .wandPointer {
@@ -64,5 +64,62 @@ li:hover {
 @media screen and (max-width: 992px) {
   .houseEmblem {
     display: none;
+  }
+}
+
+.gryffindorHeader {
+  background: rgb(116, 0, 1);
+  background: linear-gradient(
+    0deg,
+    rgba(116, 0, 1, 1) 0%,
+    rgba(44, 44, 44, 1) 50%
+  );
+  #navHome,
+  #navCharacters,
+  #navSpells,
+  #title {
+    color: #eeba30;
+  }
+}
+
+.hufflepuffHeader {
+  background: rgb(236, 185, 57);
+  background: linear-gradient(
+    0deg,
+    rgba(236, 185, 57, 1) 0%,
+    rgba(44, 44, 44, 1) 50%
+  );
+  #navHome,
+  #navCharacters,
+  #navSpells {
+    color: #372e29;
+  }
+}
+
+.ravenclawHeader {
+  background: rgb(34, 47, 91);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 47, 91, 1) 0%,
+    rgba(44, 44, 44, 1) 50%
+  );
+  #navHome,
+  #navCharacters,
+  #navSpells {
+    color: #bebebe;
+  }
+}
+
+.slytherinHeader {
+  background: rgb(26, 71, 42);
+  background: linear-gradient(
+    0deg,
+    rgba(26, 71, 42, 1) 0%,
+    rgba(44, 44, 44, 1) 50%
+  );
+  #navHome,
+  #navCharacters,
+  #navSpells {
+    color: #aaaaaa;
   }
 }

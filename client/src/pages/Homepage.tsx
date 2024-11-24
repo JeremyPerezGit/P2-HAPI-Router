@@ -53,7 +53,7 @@ function Homepage() {
           </section>
           <button type="button" className="center-button">
             <NavLink to="/characters" className="navlinks">
-              Personnages
+              Characters
             </NavLink>
           </button>
         </section>
@@ -71,7 +71,7 @@ function Homepage() {
           </div>
           <button type="button" className="center-button">
             <NavLink to="/spells" className="navlinks">
-              Sorts
+              Spells
             </NavLink>
           </button>
         </section>
