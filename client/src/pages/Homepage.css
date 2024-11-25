@@ -202,6 +202,17 @@
     padding: 0;
     justify-content: space-around;
   }
+  .phrase-text {
+    font-family: inherit;
+    font-size: 20px;
+    color: inherit;
+  }
+  .random-text-container {
+    font-size: 20px;
+  }
+  .title-spell {
+    font-size: 22px;
+  }
 }
 
 .gryffindor {
