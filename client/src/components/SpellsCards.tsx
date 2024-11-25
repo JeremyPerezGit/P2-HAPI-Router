@@ -27,10 +27,10 @@ export default function SpellsCards({ spell }: SpellsCardsProps) {
 
       <section className="spellBody">
         <div className="cardName">
-          <h3>Name : {spell.attributes.name}</h3>
+          <h4>Name : {spell.attributes.name}</h4>
         </div>
         <div className="spellCardBody">
-          <h3>Effect : {spell.attributes.effect}</h3>
+          <h4>Effect : {spell.attributes.effect}</h4>
         </div>
       </section>
     </div>

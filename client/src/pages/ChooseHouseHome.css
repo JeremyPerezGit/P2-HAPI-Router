@@ -31,6 +31,14 @@ h2 {
   text-align: center;
   font-family: HP, sans-serif;
   font-size: 2.5em;
+  font-weight: 400;
+}
+
+#chooseHouseH1 {
+  margin: 40px 0;
+}
+#chooseHouseH2 {
+  margin-bottom: 30px;
 }
 .card-container {
   display: flex;
