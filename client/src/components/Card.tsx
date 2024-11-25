@@ -4,6 +4,8 @@ import { NavLink } from "react-router-dom";
 interface CardProps {
   house: string;
   imageSrc: string;
+  alt: string;
+  className: string;
   description: string;
   onClick: () => void;
 }
@@ -20,11 +22,11 @@ const Card: React.FC<CardProps> = ({
 
   return (
     <div className={`card ${house.toLowerCase()}`}>
-      <img src={imageSrc} alt={house} />
-      <p>{description}</p>
       <NavLink to="/home" className="button" onClick={handleClick}>
+        <img src={imageSrc} alt={house} />
         {house}
       </NavLink>
+      <p>{description}</p>
     </div>
   );
 };
