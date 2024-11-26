@@ -12,14 +12,10 @@
     transform: translateY(0);
   }
 }
-.homepage {
+.content {
   animation: pageLoadEffect 2s ease-out;
-
   text-align: center;
   color: black;
-}
-
-.content {
   display: flex;
   flex-direction: column;
 }
@@ -39,6 +35,10 @@
   border-radius: 25px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative; /* Pour positionner les éléments enfants */
+}
+
+.section1 {
+  margin-top: 70px;
 }
 
 .character-image {
@@ -206,16 +206,48 @@
 
 .gryffindor {
   background-color: #740001;
+  #navHome,
+  #navCharacters,
+  #navSpells,
+  #title {
+    color: #eeba30;
+  }
 }
 
 .hufflepuff {
   background-color: #ecb939;
+  #navHome,
+  #navCharacters,
+  #navSpells,
+  #title {
+    color: #372e29;
+  }
 }
 
 .ravenclaw {
   background-color: #222f5b;
+  #navHome,
+  #navCharacters,
+  #navSpells,
+  #title {
+    color: #bebebe;
+  }
 }
 
 .slytherin {
   background-color: #1a472a;
+  #navHome,
+  #navCharacters,
+  #navSpells,
+  #title {
+    color: #aaaaaa;
+  }
+}
+
+.navlinks {
+  text-decoration: none;
+}
+
+.navlinks:visited {
+  color: inherit;
 }
