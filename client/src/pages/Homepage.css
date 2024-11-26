@@ -61,6 +61,10 @@
   align-items: center;
 }
 
+.section1 {
+  margin-top: 100px;
+}
+
 .section2 {
   width: 80%;
   max-width: 600px;
@@ -201,6 +205,17 @@
   .section4 {
     padding: 0;
     justify-content: space-around;
+  }
+  .phrase-text {
+    font-family: inherit;
+    font-size: 20px;
+    color: inherit;
+  }
+  .random-text-container {
+    font-size: 20px;
+  }
+  .title-spell {
+    font-size: 22px;
   }
 }
 

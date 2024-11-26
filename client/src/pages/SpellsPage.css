@@ -43,7 +43,6 @@
   margin-top: 10%;
   max-height: 150px;
   transition: transform 0.5s;
-  cursor: pointer;
 }
 
 #spellImage:hover {
