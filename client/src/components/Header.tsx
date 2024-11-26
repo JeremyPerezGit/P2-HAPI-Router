@@ -40,12 +40,6 @@ export default function Header() {
     setIsPlaying(!isPlaying);
   };
 
-  const handleEmblemKeyUp = (event: React.KeyboardEvent<HTMLImageElement>) => {
-    if (event.key === "Enter" || event.key === " ") {
-      handleEmblemClick();
-    }
-  };
-
   return (
     <header className={`header ${theme}Header`}>
       <section className="header-title">
@@ -53,10 +47,10 @@ export default function Header() {
         <figure className="houseEmblem">
           <img
             src={emblem}
-            alt="Hogwarts Emblem"
-            id="houseEmblem"
+            alt={`${theme} emblem`}
             onClick={handleEmblemClick}
-            onKeyUp={handleEmblemKeyUp}
+            id="houseEmblem"
+            onKeyUp={handleEmblemClick}
           />
         </figure>
       </section>
@@ -76,6 +70,12 @@ export default function Header() {
           <li>
             <NavLink to={"/spells"} id="navSpells">
               Spells
+              <span className="wandPointer">🪄</span>
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to={"/"} id="navChooseHouse">
+              Choose your house
               <span className="wandPointer">🪄</span>
             </NavLink>
           </li>

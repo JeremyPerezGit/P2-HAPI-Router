@@ -38,7 +38,8 @@ li:hover {
 
 #navSpells,
 #navCharacters,
-#navHome {
+#navHome,
+#navChooseHouse {
   text-decoration: none;
   color: #eeba30;
 }
@@ -52,6 +53,11 @@ li:hover {
 
 #houseEmblem {
   width: 200px;
+  transition: transform 0.5s;
+}
+
+#houseEmblem:hover {
+  transform: scale(1.05);
 }
 
 .header-title {
@@ -77,6 +83,7 @@ li:hover {
   #navHome,
   #navCharacters,
   #navSpells,
+  #navChooseHouse,
   #title {
     color: #eeba30;
   }
@@ -91,7 +98,8 @@ li:hover {
   );
   #navHome,
   #navCharacters,
-  #navSpells {
+  #navSpells,
+  #navChooseHouse {
     color: #372e29;
   }
 }
@@ -105,7 +113,8 @@ li:hover {
   );
   #navHome,
   #navCharacters,
-  #navSpells {
+  #navSpells,
+  #navChooseHouse {
     color: #bebebe;
   }
 }
@@ -117,9 +126,15 @@ li:hover {
     rgba(26, 71, 42, 1) 0%,
     rgba(44, 44, 44, 1) 50%
   );
+
   #navHome,
   #navCharacters,
-  #navSpells {
+  #navSpells,
+  #navChooseHouse {
     color: #aaaaaa;
   }
+}
+
+.charactersTitle {
+  padding: 50px;
 }
