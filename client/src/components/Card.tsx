@@ -4,8 +4,6 @@ import { NavLink } from "react-router-dom";
 interface CardProps {
   house: string;
   imageSrc: string;
-  alt: string;
-  className: string;
   description: string;
   onClick: () => void;
 }
