@@ -34,7 +34,7 @@
   background-color: #fbc926;
   border-radius: 25px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  position: relative; /* Pour positionner les éléments enfants */
+  position: relative;
 }
 
 .section1 {

@@ -79,6 +79,12 @@ export default function Header() {
               <span className="wandPointer">🪄</span>
             </NavLink>
           </li>
+          <li>
+            <NavLink to={"/copyright"} id="navChooseHouse">
+              Copyright
+              <span className="wandPointer">🪄</span>
+            </NavLink>
+          </li>
         </ul>
       </nav>
     </header>
