@@ -12,52 +12,23 @@
     transform: translateY(0);
   }
 }
-.characterCard {
+
+.charactersCards {
   animation: pageLoadEffect 2s ease-out;
-}
-
-.characterCard {
   display: flex;
-  align-items: center;
-  flex-direction: column;
-  border-radius: 25px 25px 0 0;
-  padding: 0;
-  background-image: url(../assets/images/CardDefault.png);
-  background-size: cover;
-  height: 400px;
-  width: 250px;
-  margin: 50px auto;
-  color: #eeba30;
+  flex-wrap: wrap;
+  margin: 100px;
 }
 
-@media screen and (min-width: 992px) {
-  .charactersCards {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 100px;
-  }
+.charactersTitle {
+  text-align: center;
+  font-family: "HP", sans-serif;
+  font-weight: 400;
+  color: black;
+  font-size: 3rem;
 }
 
-#characterImage {
-  border-radius: 25px 25px 0 0;
-  margin-top: 10%;
-  max-height: 150px;
-  transition: transform 0.5s;
-}
-
-#characterImage:hover {
-  -webkit-transform: scale(1.5);
-  transform: scale(1.5);
-}
-
-.characterBody {
-  padding: 8%;
-  font-size: 1rem;
-}
-
-.cardName {
-  padding: 1rem 0;
-}
+/* CHANGE WITH HOUSE CHOOSE  */
 
 .Gryffindor {
   background-image: url(../assets/images/CardGryf.png);
@@ -78,14 +49,7 @@
   background-size: cover;
 }
 
-h4 {
-  font-size: 1.2rem;
-}
-
-.patronus {
-  display: flex;
-  align-items: center;
-}
+/* FILTERS STYLE  */
 
 .sorting {
   font-size: 1.2rem;
@@ -93,7 +57,7 @@ h4 {
   width: 30%;
   padding: 0;
   background-color: #2c2c2c;
-  border: 2px solid #fbc926;
+  border: 2px solid #00000070;
   color: #fbc926;
   height: 30px;
   letter-spacing: 1px;
@@ -107,5 +71,5 @@ h4 {
 
 #sortTitle {
   font-size: 1rem;
-  color: #fbc926;
+  color: #000000;
 }

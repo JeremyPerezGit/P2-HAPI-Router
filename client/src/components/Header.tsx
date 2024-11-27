@@ -55,7 +55,7 @@ export default function Header() {
         </figure>
       </section>
       <nav>
-        <ul>
+        <ul className="headerNav">
           <li>
             <NavLink to={"/home"} id="navHome">
               Home <span className="wandPointer">🪄</span>
