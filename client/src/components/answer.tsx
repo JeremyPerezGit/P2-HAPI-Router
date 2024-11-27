@@ -5,8 +5,8 @@ interface AnswerProps {
   question: string;
   choices: string[];
   onAnswerSelected: (answer: string) => void;
-  answer: string;
-  correctanswer: string;
+  answer?: string;
+  correctAnswer?: string;
 }
 
 const Answer: React.FC<AnswerProps> = ({

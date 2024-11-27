@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import "./Homepage.css";
 import { NavLink } from "react-router-dom";
 import { useTheme } from "../context/theme";
-import Quiz from "./Quiz";
 
 function Homepage() {
   const { theme } = useTheme();

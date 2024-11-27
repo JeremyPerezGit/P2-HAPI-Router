@@ -1,8 +1,6 @@
 import type React from "react";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
-import { NavLink } from "react-router-dom";
-import HomePage from "./Homepage";
 import Answer from "../components/answer";
 
 const questions = {

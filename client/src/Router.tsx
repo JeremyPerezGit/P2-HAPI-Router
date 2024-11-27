@@ -4,8 +4,8 @@ import Header from "./components/Header";
 import CharactersPage from "./pages/CharactersPage";
 import ChooseHouseHome from "./pages/ChooseHouseHome";
 import Homepage from "./pages/Homepage";
-import SpellsPage from "./pages/SpellsPage";
 import Quiz from "./pages/Quiz";
+import SpellsPage from "./pages/SpellsPage";
 
 export const mainRouter = createBrowserRouter([
   {
