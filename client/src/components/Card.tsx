@@ -20,11 +20,11 @@ const Card: React.FC<CardProps> = ({
 
   return (
     <div className={`card ${house.toLowerCase()}`}>
-      <img src={imageSrc} alt={house} />
-      <p>{description}</p>
       <NavLink to="/home" className="button" onClick={handleClick}>
+        <img src={imageSrc} alt={house} />
         {house}
       </NavLink>
+      <p>{description}</p>
     </div>
   );
 };
