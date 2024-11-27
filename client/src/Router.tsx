@@ -5,6 +5,7 @@ import CharactersPage from "./pages/CharactersPage";
 import ChooseHouseHome from "./pages/ChooseHouseHome";
 import Homepage from "./pages/Homepage";
 import SpellsPage from "./pages/SpellsPage";
+import Quiz from "./pages/Quiz";
 
 export const mainRouter = createBrowserRouter([
   {
@@ -41,6 +42,7 @@ export const mainRouter = createBrowserRouter([
           </>
         ),
       },
+      { path: "/quiz/:house", element: <Quiz /> },
       {
         path: "*",
         element: (

@@ -146,16 +146,16 @@ h2 {
     rgba(255, 255, 255, 0.6) 50%,
     rgba(255, 255, 255, 0) 100%
   );
-  transition: left 0.5s ease-in-out; /* Plus fluide */
+  transition: left 0.5s ease-in-out;
 }
 
 .card img:hover::before {
-  left: 125%; /* Traverse toute l'image */
+  left: 125%;
 }
 
 .card img:hover {
-  transform: scale(1.05); /* Légère mise en avant */
-  filter: brightness(1.2); /* Accentue la luminosité */
+  transform: scale(1.05);
+  filter: brightness(1.2);
 }
 
 .card img:hover {
@@ -172,4 +172,70 @@ h2 {
   cursor: pointer;
   font-size: 1.7em;
   text-decoration: none;
+}
+
+:root {
+  font-family: sans-serif;
+  background: #2c2c2c;
+}
+
+.h1 {
+  font-size: 10em;
+}
+
+.quiz-container h1 {
+  text-align: center;
+  color: #eeba30;
+  font-size: 5em;
+}
+
+.answer-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0px;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.choices {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+}
+
+.choices li {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.choices button {
+  width: 50%;
+  padding: 30px;
+  font-size: 1em;
+  border: 1px solid #eeba30;
+  border-radius: 5px;
+  background-color: #222f5b;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  color: #9a8a8a;
+}
+
+.choices button:hover {
+  background-color: #1a648f;
+}
+
+.choices button.selected {
+  background-color: #d0eaff;
+  border-color: #007bff;
+}
+
+.question {
+  font-size: 2em;
+  margin-bottom: 40px;
+  color: #eeba30;
+  text-align: center;
 }

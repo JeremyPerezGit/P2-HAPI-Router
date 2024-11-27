@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./Homepage.css";
 import { NavLink } from "react-router-dom";
 import { useTheme } from "../context/theme";
+import Quiz from "./Quiz";
 
 function Homepage() {
   const { theme } = useTheme();
@@ -25,7 +26,7 @@ function Homepage() {
     "Tom Felton must have dyed his hair 18 times over the course of the eight films",
     "Hermione is the only one of the trio to have completed her seventh year at Hogwarts.",
     "The characters shed their wizarding robes in the third film: the director wanted to show the different personalities of Harry, Ron and Hermione through everyday clothes.",
-    "he 40 cats that appeared with Professor Umbridge were subsequently adopted by families who had no idea of their “fame”",
+    "The 40 cats that appeared with Professor Umbridge were subsequently adopted by families who had no idea of their “fame”",
     "Dumbledore hired Prof. Lockart to better expose his frauds",
     "Ron is mentioned 5809 times in the films of the books.",
     "Harry Potter and the Philosopher's Stone is the best-selling book of the saga",
@@ -119,20 +120,30 @@ function Homepage() {
           </button>
         </section>
         <section className="section section3" id="section3">
-          <h2 className="titlesHP">
-            Useless informations therefore essential :
-          </h2>
+          <h2 className="titlesHP">Useless informations therefore essential</h2>
           <p className="phrase-text">{phrases[currentPhraseIndex]}</p>
         </section>
         <section className="section section4" id="section4">
           <div className="train-container">
             <div className="text-overlay">
               <h2 className="train-title">
-                Do you want to test your knowledge?
+                Do you want to test your knowledge? Quiz!!!
               </h2>
-              <button type="button" className="center-button2">
-                Start the quiz
-              </button>
+              <NavLink to="/quiz/gryffindor">
+                <button type="button" className="center-button2">
+                  Easy 🪄
+                </button>
+              </NavLink>
+              <NavLink to="/quiz/hufflepuff">
+                <button type="button" className="center-button2">
+                  Medium 🎃
+                </button>
+              </NavLink>
+              <NavLink to="/quiz/ravenclaw">
+                <button type="button" className="center-button2">
+                  Hard ☠️
+                </button>
+              </NavLink>
             </div>
           </div>
         </section>
