@@ -22,7 +22,7 @@ ul {
 
 li {
   list-style: none;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: #eeba30;
 }
 .wandPointer {
@@ -70,6 +70,11 @@ li:hover {
 @media screen and (max-width: 992px) {
   .houseEmblem {
     display: none;
+  }
+  .headerNav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
   }
 }
 

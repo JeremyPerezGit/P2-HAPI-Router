@@ -3,7 +3,9 @@ import App from "./App";
 import Header from "./components/Header";
 import CharactersPage from "./pages/CharactersPage";
 import ChooseHouseHome from "./pages/ChooseHouseHome";
+import Copyright from "./pages/Copyright";
 import Homepage from "./pages/Homepage";
+import PageNotFound from "./pages/PageNotFound";
 import Quiz from "./pages/Quiz";
 import SpellsPage from "./pages/SpellsPage";
 
@@ -44,11 +46,20 @@ export const mainRouter = createBrowserRouter([
       },
       { path: "/quiz/:house", element: <Quiz /> },
       {
-        path: "*",
+        path: "/copyright",
         element: (
           <>
             <Header />
-            <h2>Error 404</h2>
+            <Copyright />
+          </>
+        ),
+      },
+      {
+        path: "*",
+        element: (
+          <>
+            {/* <Header /> */}
+            <PageNotFound />
           </>
         ),
       },

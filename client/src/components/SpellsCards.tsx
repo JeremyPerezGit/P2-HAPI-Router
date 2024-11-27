@@ -1,4 +1,5 @@
 import missingSpellImage from "../assets/images/missing_spell.svg";
+import "./SpellsCards.css";
 
 interface SpellsProps {
   id: string;
@@ -26,11 +27,13 @@ export default function SpellsCards({ spell }: SpellsCardsProps) {
       </picture>
 
       <section className="spellBody">
-        <div className="cardName">
-          <h4>Name : {spell.attributes.name}</h4>
+        <div className="spellCardName">
+          <h3 id="spellName">Name : </h3>
+          <p>{spell.attributes.name}</p>
         </div>
         <div className="spellCardBody">
-          <h4>Effect : {spell.attributes.effect}</h4>
+          <h3 id="spellEffect">Effect : </h3>
+          <p>{spell.attributes.effect}</p>
         </div>
       </section>
     </div>

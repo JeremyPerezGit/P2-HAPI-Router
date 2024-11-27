@@ -14,55 +14,38 @@
 }
 .spellsCards {
   animation: pageLoadEffect 2s ease-out;
-}
-
-.spellCard {
   display: flex;
-  align-items: center;
-  flex-direction: column;
-  border-radius: 25px 25px 0 0;
-  padding: 0;
-  background-image: url(../assets/images/CardDefault.png);
-  background-size: cover;
-  height: 400px;
-  width: 250px;
-  margin: 50px auto;
-  color: #eeba30;
+  flex-wrap: wrap;
+  margin: 100px;
 }
 
-@media screen and (min-width: 992px) {
-  .spellsCards {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 100px;
-  }
+.spellsTitle {
+  text-align: center;
+  font-family: "HP", sans-serif;
+  font-weight: 400;
+  color: black;
+  font-size: 3rem;
+  padding: 50px;
+  margin: 0;
 }
 
 #spellImage {
   border-radius: 25px 25px 0 0;
   margin-top: 10%;
   max-height: 150px;
-  transition: transform 0.5s;
-}
-
-#spellImage:hover {
-  -webkit-transform: scale(1.5);
-  transform: scale(1.5);
 }
 
 .spellBody {
   padding: 10%;
-  font-size: 1rem;
+  width: 100%;
+  text-align: center;
 }
 
-.cardName {
+.spellCardName {
   padding: 1rem 0;
 }
 
-h3 {
-  color: black;
-  text-align: center;
-  font-family: HP, sans-serif;
-  font-size: 2.5em;
-  font-weight: 400;
+#spellName,
+#spellEffect {
+  margin-bottom: 20px;
 }
