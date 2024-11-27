@@ -17,8 +17,8 @@ function ChooseHouseHome() {
 
   return (
     <div className={`choose-house-home ${changeColor.toLowerCase()}`}>
-      <h1>Hapi Router</h1>
-      <h2>Choose Your House</h2>
+      <h1 id="chooseHouseH1">Hapi Router</h1>
+      <h2 id="chooseHouseH2">Choose Your House</h2>
 
       <div className="card-container">
         {/* Gryffindor Card */}
