@@ -39,8 +39,8 @@ export default function SpellsPage() {
 
   return (
     <div className={theme}>
+      <h2 className="spellsTitle">Spells</h2>
       <Search onSearch={handleSearch} />
-      <h3 className="spellsTitle">Spells</h3>
 
       <section className="spellsCards">
         {filteredSpells.map((spell) => (

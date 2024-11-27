@@ -55,7 +55,7 @@ export default function Header() {
         </figure>
       </section>
       <nav>
-        <ul>
+        <ul className="headerNav">
           <li>
             <NavLink to={"/home"} id="navHome">
               Home <span className="wandPointer">🪄</span>
@@ -76,6 +76,12 @@ export default function Header() {
           <li>
             <NavLink to={"/"} id="navChooseHouse">
               Choose your house
+              <span className="wandPointer">🪄</span>
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to={"/copyright"} id="navChooseHouse">
+              Copyright
               <span className="wandPointer">🪄</span>
             </NavLink>
           </li>
