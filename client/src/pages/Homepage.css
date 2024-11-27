@@ -12,14 +12,10 @@
     transform: translateY(0);
   }
 }
-.homepage {
+.content {
   animation: pageLoadEffect 2s ease-out;
-
   text-align: center;
   color: black;
-}
-
-.content {
   display: flex;
   flex-direction: column;
 }
@@ -41,6 +37,10 @@
   position: relative; /* Pour positionner les éléments enfants */
 }
 
+.section1 {
+  margin-top: 70px;
+}
+
 .character-image {
   margin: 10px 10px;
   border-radius: 15px;
@@ -59,6 +59,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.section1 {
+  margin-top: 100px;
 }
 
 .section2 {
@@ -202,20 +206,63 @@
     padding: 0;
     justify-content: space-around;
   }
+  .phrase-text {
+    font-family: inherit;
+    font-size: 20px;
+    color: inherit;
+  }
+  .random-text-container {
+    font-size: 20px;
+  }
+  .title-spell {
+    font-size: 22px;
+  }
 }
 
 .gryffindor {
   background-color: #740001;
+  #navHome,
+  #navCharacters,
+  #navSpells,
+  #title {
+    color: #eeba30;
+  }
 }
 
 .hufflepuff {
   background-color: #ecb939;
+  #navHome,
+  #navCharacters,
+  #navSpells,
+  #title {
+    color: #372e29;
+  }
 }
 
 .ravenclaw {
   background-color: #222f5b;
+  #navHome,
+  #navCharacters,
+  #navSpells,
+  #title {
+    color: #bebebe;
+  }
 }
 
 .slytherin {
   background-color: #1a472a;
+  #navHome,
+  #navCharacters,
+  #navSpells,
+  #title {
+    color: #aaaaaa;
+  }
+}
+
+.navlinks {
+  text-decoration: none;
+}
+
+.navlinks:visited {
+  color: inherit;
 }

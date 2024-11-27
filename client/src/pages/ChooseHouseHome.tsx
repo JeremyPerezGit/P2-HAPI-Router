@@ -17,39 +17,39 @@ function ChooseHouseHome() {
 
   return (
     <div className={`choose-house-home ${changeColor.toLowerCase()}`}>
-      <h1>Hapi Router</h1>
-      <h2>Choose Your House</h2>
+      <h1 id="chooseHouseH1">Hapi Router</h1>
+      <h2 id="chooseHouseH2">Choose Your House</h2>
 
       <div className="card-container">
         {/* Gryffindor Card */}
         <Card
-          house="Gryffindor"
           imageSrc="src/assets/images/Gryffindor.png"
-          description="Bravery and Chivalry"
+          house="Gryffindor"
+          description="Bravery & chivalry"
           onClick={() => handleChange("gryffindor")}
         />
 
         {/* Hufflepuff Card */}
         <Card
-          house="Hufflepuff"
           imageSrc="src/assets/images/Hufflepuff.png"
-          description="Loyalty and hard working"
+          house="Hufflepuff"
+          description="Loyalty & hard working"
           onClick={() => handleChange("hufflepuff")}
         />
 
         {/* Ravenclaw Card */}
         <Card
-          house="Ravenclaw"
           imageSrc="src/assets/images/Ravenclaw.png"
-          description="Wit and learning"
+          house="Ravenclaw"
+          description="Wisdom wit & learning"
           onClick={() => handleChange("ravenclaw")}
         />
 
         {/* Slytherin Card */}
         <Card
-          house="Slytherin"
           imageSrc="src/assets/images/Slytherin.png"
-          description="Cunning and ambition"
+          house="Slytherin"
+          description="Cunning & ambition"
           onClick={() => handleChange("slytherin")}
         />
       </div>

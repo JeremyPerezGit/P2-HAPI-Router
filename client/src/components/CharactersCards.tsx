@@ -30,14 +30,17 @@ export default function CharactersCards({ character }: CharactersCardsProps) {
 
       <section className="characterBody">
         <div className="cardName">
-          <h3>{character.name}</h3>
+          <h4>{character.name}</h4>
         </div>
         <div className="characterCardBody">
-          <h3>Wand :</h3>
+          <h4>Wand :</h4>
           <p>Wood : {character.wand.wood || "???"}</p>
           <p>Core : {character.wand.core || "???"}</p>
           <p>Length : {character.wand.length || "???"} inches</p>
-          <h3>Patronus : {character.patronus || "???"}</h3>
+          <div className="patronus">
+            <h4>Patronus : </h4>
+            <p> {character.patronus || "???"}</p>
+          </div>
         </div>
       </section>
     </div>
