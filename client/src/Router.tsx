@@ -6,6 +6,7 @@ import ChooseHouseHome from "./pages/ChooseHouseHome";
 import Copyright from "./pages/Copyright";
 import Homepage from "./pages/Homepage";
 import PageNotFound from "./pages/PageNotFound";
+import Quiz from "./pages/Quiz";
 import SpellsPage from "./pages/SpellsPage";
 
 export const mainRouter = createBrowserRouter([
@@ -43,6 +44,7 @@ export const mainRouter = createBrowserRouter([
           </>
         ),
       },
+      { path: "/quiz/:house", element: <Quiz /> },
       {
         path: "/copyright",
         element: (

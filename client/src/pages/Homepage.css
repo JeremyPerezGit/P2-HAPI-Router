@@ -94,6 +94,7 @@
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
+  font-size: 11px;
 }
 
 .train-container {
@@ -110,16 +111,18 @@
   font-size: 2rem;
   text-shadow: 2px 2px 8px rgb(0 0 0);
   font-weight: 400;
+  margin: auto;
+  padding: 1em;
 }
 
 .center-button2 {
-  margin: 20px auto;
+  margin: 0px;
   border-radius: 8px;
   font-size: 1rem;
   text-decoration: none;
-  padding: 10px 20px;
-  background-color: #fbc926;
-  color: black;
+  padding: 3px 5px;
+  background-color: #060606;
+  color: rgb(255, 255, 255);
   cursor: pointer;
 }
 
