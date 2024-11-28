@@ -58,7 +58,6 @@ export const mainRouter = createBrowserRouter([
         path: "*",
         element: (
           <>
-            {/* <Header /> */}
             <PageNotFound />
           </>
         ),
