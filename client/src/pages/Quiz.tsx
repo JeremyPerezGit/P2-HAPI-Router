@@ -1,19 +1,19 @@
 import type React from "react";
 import { useState } from "react";
-import { useParams } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import Answer from "../components/answer";
 
 const questions = {
   gryffindor: [
     {
       question: "What is the Slytherin house animal?",
-      choices: ["Snake", "Eagle", "Lion", "Badger"],
+      choices: ["Badger", "Eagle", "Lion", "Snake"],
       correctAnswer: "Snake",
     },
 
     {
       question: "In which house is Harry Potter sorted at Hogwarts?",
-      choices: ["Hufflepuff", "Slytherin", "Ravenclaw", "Gryffindor"],
+      choices: ["Hufflepuff", "Slytherin", "Gryffindor", "Ravenclaw"],
       correctAnswer: "Gryffindor",
     },
 
@@ -55,7 +55,7 @@ const questions = {
     },
     {
       question: "What is the name of Harry’s famous owl?",
-      choices: ["Scabbers", "Hedwig", "Crookshanks", "Buckbeak"],
+      choices: ["Scabbers", "Crookshanks", "Hedwig", "Buckbeak"],
       correctAnswer: "Hedwig",
     },
 
@@ -75,8 +75,8 @@ const questions = {
       choices: [
         "The Goblet of Fire",
         "The Order of the Phoenix",
-        "The Half-Blood Prince",
         "The Deathly Hallows",
+        "The Half-Blood Prince",
       ],
       correctAnswer: "The Half-Blood Prince",
     },
@@ -113,7 +113,7 @@ const questions = {
 
     {
       question: "What is the name of Neville Longbottom’s mother?",
-      choices: ["Alice", "Lily", "Molly", "Andromeda"],
+      choices: ["Lily", "Alice", "Molly", "Andromeda"],
       correctAnswer: "Alice",
     },
 
@@ -166,6 +166,11 @@ const Quiz: React.FC = () => {
           <h2>
             Your Score: {score} / {houseQuestions.length}
           </h2>
+          <NavLink to="/home" id="returnHome">
+            <button type="button" className="returnHomeButton">
+              Back home
+            </button>
+          </NavLink>
         </div>
       ) : (
         <Answer
